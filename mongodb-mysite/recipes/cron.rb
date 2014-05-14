@@ -9,7 +9,7 @@ template 'mongobackup.sh' do
   source 'mongobackup.sh.erb'
   owner 'root'
   group 'root'
-  mode 0644
+  mode 0744
 end
 
 template 's3cfg.sh' do
@@ -22,5 +22,5 @@ template 's3cfg.sh' do
   source 's3cfg.erb'
   owner 'root'
   group 'root'
-  mode 0644
+  mode 0600
 end
