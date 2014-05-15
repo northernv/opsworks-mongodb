@@ -1,3 +1,6 @@
+package 's3cmd' do
+  action :install
+end
 
 template 'mongobackup.sh' do
   case node[:platform]
