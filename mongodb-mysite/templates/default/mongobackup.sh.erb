@@ -30,7 +30,7 @@ EOF
 MONGODB_USER=''
 MONGODB_PASSWORD=''
 DB=test
-S3_BUCKET=<% node[:s3backup][:bucket] %>
+S3_BUCKET=<%= node[:s3backup][:bucket] %>
 DIR=/tmp
 DATE=$(date -u "+%a")
 
