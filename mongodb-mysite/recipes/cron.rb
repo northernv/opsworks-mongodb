@@ -2,6 +2,10 @@ package 's3cmd' do
   action :install
 end
 
+package 'mongo-10gen' do
+  action :install
+end
+
 template 'mongobackup.sh' do
   case node[:platform]
   when 'centos','redhat','fedora','amazon'
