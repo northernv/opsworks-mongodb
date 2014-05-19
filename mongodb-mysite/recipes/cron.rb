@@ -2,7 +2,11 @@ package 's3cmd' do
   action :install
 end
 
-package 'mongo-10gen' do
+package 'mongodb-org-tools' do
+  action :install
+end
+
+package 'mongodb-org-shell' do
   action :install
 end
 
